@@ -1,3 +1,8 @@
+html, body{
+	margin: 0;
+	height: 100%;
+}
+
 body{
 	background-color: black;
 	color: white;
@@ -5,9 +10,9 @@ body{
 
 header{
 	display: inline-block;
+	max-height:10%; 
+	text-align: center;
 }
-
-
 
 .titles h1{
 	display: none;
@@ -31,4 +36,14 @@ header button{
 
 #Add{
 	float: right;
+}
+
+#tabs{
+	background-color: black;
+	min-height: 80%;
+	max-height: 100%;
+}
+
+footer{
+	max-height: 10%;
 }
