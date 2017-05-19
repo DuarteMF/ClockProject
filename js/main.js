@@ -9,10 +9,11 @@ $("footer li a").click(function(){
 	$activeTitle.removeClass("active");
 	$($titles[$index]).addClass("active");
 
-	if($("#Edit").hasClass())
 	if($index==0 || $index==1){
-		$("#Edit, #Add").addClass("active");
-	};
+		$("#Edit, #Add").show();
+	}else{
+		$("#Edit, #Add").hide();
+	};	
 });
 
 $(function(){
