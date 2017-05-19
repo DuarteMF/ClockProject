@@ -1,6 +1,6 @@
-$("footer li a").click(function(){
+$("li a").click(function(){
 	$activeTab = $(this).parent();
-	$allTabs = $("li","footer ul");
+	$allTabs = $("li","ul");
 	$index = $allTabs.index($activeTab);
 	console.log($index);
 
