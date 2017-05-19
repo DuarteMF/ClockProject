@@ -1,0 +1,16 @@
+h1{
+	display: none;
+}
+
+h1.active{
+	display: block;	
+	text-align: center;
+}
+
+#Edit, #Add{
+	display: none;
+}
+
+#Edit.active, #Add.active{
+	display: inline-block;
+}
