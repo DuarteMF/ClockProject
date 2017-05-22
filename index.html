@@ -9,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header class="container-fluid">
+<header>
 	<button id="Edit">Edit</button>	
 	<label class="titles">
 	<h1 class="active">World Clock</h1>
@@ -21,13 +21,35 @@
 	<div class="clearfix"></div>
 </header>
 
+<div id="searchBox">
+<input type="text" name="search" placeholder="Input Location..." id="locationSearch"><input type="submit" value="search" class="submitButton">
+</div>
 
 <div id="tabs">
 	<div id="tabs-1">
-		<p>teste1</p>
+		<table>
+			<tr>
+				<td class="Delete"><button class="deleteButton"><span class="glyphicon-remove-sign" aria-hidden="true" style="color:red;"></span></button></td>
+				<td class="Location">Lisbon <br> Portugal</td>
+				<td class="Local Time">9:57</td>
+				<td class="Map"></td>
+			</tr>
+		</table>
 	</div>
 	<div id="tabs-2">
-		<p>teste2</p>
+		<table>
+			<tr>
+				<td class="Delete"><button class="deleteButton"><span class="glyphicon-remove-sign" aria-hidden="true" style="color:red;"></span></button></td>
+				<td class="Hour">22:15</td>
+				<td class="Label">Head to bed</td>
+				<td class="OnOff">
+					<label class="switch">
+	  					<input type="checkbox">
+	  					<div class="slider round"></div>
+					</label>
+				</td>
+			</tr>
+		</table>
 	</div>
 	<div id="tabs-3">
 		<p>teste3</p>
