@@ -79,7 +79,91 @@ header button{
 	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
 }
 
+/* The switch - the box around the slider */
+#tabs div .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+#tabs div .switch input {display:none;}
+
+/* The slider */
+#tabs div .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#tabs div .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#tabs div input:checked + .slider {
+  background-color: #21f24e;
+}
+
+#tabs div input:focus + .slider {
+  box-shadow: 0 0 1px #21f24e;
+}
+
+#tabs div input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+#tabs div .slider.round {
+  border-radius: 34px;
+}
+
+#tabs div .slider.round:before {
+  border-radius: 50%;
+}
+
 .deleteButton{
 	background-color: black;
 	border: none;
+}
+
+tr{
+	height: 35px;
+	width: 100%;
+}
+
+td.Delete{
+	width: 5%;
+	text-align: center;
+}
+
+td.Location, td.Hour{
+	width: 75%;
+	text-align: center;
+}
+
+td.LocalTime, td.Label{
+	width: 15%;
+	text-align: center;
+}
+
+td.Map, td.OnOff{
+	width: 5%;
+	text-align: center;
 }
